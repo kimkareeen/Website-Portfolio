@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+:root {
+  --brand-primary: #8D5B32;
+  --brand-hover: #734824;
+  --brand-light: #B28357;
+  --brand-glow: rgba(141, 91, 50, 0.12);
+  --brand-surface: #F5EFE6;
+  --brand-border: #E5DACB;
+  --bg-main: #FAF8F5;
+  --bg-card: #FFFFFF;
+  --bg-subtle: #F3ECE1;
+  --text-main: #1C1917;
+  --text-muted: #665E55;
+  --border-subtle: #E8E0D5;
+}
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  .font-serif-accent {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+}
+
+/* Custom subtle scrollbar in warm cream */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF8F5;
+}
+::-webkit-scrollbar-thumb {
+  background: #DDD5C7;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C4B9A7;
+}
+
